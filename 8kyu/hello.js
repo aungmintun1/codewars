@@ -1,20 +1,20 @@
-// This function takes two numbers as parameters, the first number being the coefficient, and the second number being the exponent.
-//Your function should multiply the two numbers, and then subtract 1 from the exponent. Then, it has to return an expression (like 28x^7). "^1" should not be truncated when exponent = 2.
-//hello 
-function derive(coefficient,exponent) {
+//refer to the example and write your first JS function
+// Please refer to two example above and write your first JS function.
+// mission 1:
+// use keyword function to define your function, function name should be helloWorld(don't forget the () and {})
+// mission 2:
+// use keyword var (or let or const) to define a variable str, value of str should be a string: "Hello World!"(don't forget the =).
+// mission 3:
+// type the console.log() in the next line (don't forget to put the str in the parentheses).
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+// In the end, click "Submit" to submit your code pass this kata.
+
+function helloWorld(){
   
-
-  let result = coefficient * exponent;
-  let newExponent = exponent - 1;
-  if (newExponent === 1) {
-    return `${result}x^1`;
-  } else if (newExponent === 0) {
-    return `${result}`;
-  } else {
-    return `${result}x^${newExponent}`;
-  }
-
-
-
-
+  let str ="Hello World!"
+  console.log(str)
 }
+
+
+
+
