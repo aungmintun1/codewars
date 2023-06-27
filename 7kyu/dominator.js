@@ -11,21 +11,25 @@
 
 
 function dominator(arr) {
-    const freqMap = {};
-    const n = arr.length;
+    const freqMap = {};     //freqMap is going to be an object where we store the frequencies 
+    const n = arr.length;   
     
-    // Count the frequency of each element in the array
+    // loop through the array
+    //Count the frequency of each element in the array
     for (let i = 0; i < n; i++) {
-      const num = arr[i];
-      freqMap[num] = (freqMap[num] || 0) + 1;
+      const num = arr[i];                   // 1
+      freqMap[num] = (freqMap[num] || 0) + 1;   
+                                                // if freqMap[num] is true then you add 1, it will return 0 
+                                                
     }
     
     // Find the dominator
     for (const key in freqMap) {
       if (freqMap[key] > n / 2) {
         return parseInt(key);
-      }
+      } 
     }
+    // if a key in freqMap occurs more than half the array size than it is the dominator
     
     return -1; // No dominator found
   }
